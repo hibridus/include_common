@@ -21,9 +21,17 @@ typedef unsigned int UINT, DWORD;
 typedef signed long long   INT64;
 typedef unsigned long long UINT64, QWORD;
 
+/* Extra */
+typedef void VOID;
+
 /* Pointers */
-typedef void* PVOID, LPVOID;
-typedef CHAR* STRING;
+typedef const CHAR*  STRING;
+typedef VOID* PVOID, LPVOID;
+#define NULL  ((LPVOID)0)
+
+/* Booleans */
+#define TRUE  1
+#define FALSE 0
 
 #ifdef __cplusplus
 }
