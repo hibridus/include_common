@@ -1,10 +1,3 @@
-#ifndef INCLUDE_COMMON_STDINT_H
-#define INCLUDE_COMMON_STDINT_H
-
-#ifdef __cplusplus
-extern "C" {
-#endif // __cplusplus
-
 /* 8 bits */
 typedef signed char   INT8;
 typedef unsigned char UINT8, CHAR, BYTE, BOOL;
@@ -29,12 +22,15 @@ typedef const CHAR*  STRING;
 typedef VOID* PVOID, LPVOID;
 #define NULL  ((LPVOID)0)
 
+typedef unsigned char* LPBYTE;
+typedef unsigned short* LPWORD;
+typedef unsigned int* LPDWORD;
+
 /* Booleans */
 #define TRUE  1
 #define FALSE 0
 
-#ifdef __cplusplus
-}
-#endif // __cplusplus
-
-#endif // INCLUDE_COMMON_STDINT_H
+/* Variables */
+typedef float FLOAT;
+typedef double DOUBLE;
+typedef long LONG;
