@@ -14,8 +14,8 @@ typedef signed short   INT16;
 typedef unsigned short UINT16, SHORT, WORD;
 
 /* 32 bits */
-typedef signed int   INT32;
-typedef unsigned int UINT32, DWORD;
+typedef signed int   INT;
+typedef unsigned int UINT, DWORD;
 
 /* 64 bits */
 typedef signed long long   INT64;
